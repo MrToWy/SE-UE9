@@ -17,7 +17,12 @@ namespace SE_UE9
             Application.SetHighDpiMode(HighDpiMode.SystemAware);
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            Person person = new Person();
+            
+            new PersonWindow(person).Show();
+            new PersonWindow(person).Show();
+            Application.Run(new PersonWindow(person));
         }
     }
 }
